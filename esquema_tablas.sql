@@ -1,3 +1,9 @@
+-- Creación de la base de datos y las 6 tablas normalizadas del modelo:
+-- provincia, departamento, localidad, tipologia, origen_financiamiento y establecimiento.
+-- departamento y localidad usan claves compuestas para mantener la jerarquía
+-- provincia -> departamento -> localidad, y establecimiento se relaciona con
+-- localidad, tipologia y origen_financiamiento mediante claves foráneas.
+
 CREATE DATABASE IF NOT EXISTS farmaprod;
 
 USE farmaprod;
