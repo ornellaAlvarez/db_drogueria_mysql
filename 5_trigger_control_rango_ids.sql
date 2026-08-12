@@ -1,8 +1,7 @@
--- PUNTO 2.5 - Trigger de Control de Rangos de Identificación
--- Desarrollar un trigger que impida la inserción de nuevos registros en la tabla de
--- establecimientos si el establecimiento_id provisto se encuentra en el rango reservado
--- para uso gubernamental exclusivo, definido entre los valores 10000000 y 50000000 inclusive.
--- El trigger debe cancelar la operación inmediatamente.
+-- Trigger de Control de Rangos de Identificación
+-- Impide insertar nuevos registros en la tabla establecimientos si el el 
+-- establecimiento_id se encuentro dentro del rango reservado para uso gubernamental
+-- exclusivo (10000000 - 50000000 inclusive), cancelando la operación.
 
 USE farmaprod;
  
