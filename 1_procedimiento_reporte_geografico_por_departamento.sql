@@ -1,5 +1,5 @@
 -- Procedimiento de Reporte Geográfico por Coincidencia
--- Se recibe por parámetro el nombre (o parte del nombre) de un Departamento
+-- Recibe por parámetro el nombre (o parte del nombre) de un Departamento
 -- (por ejemplo: 'AVELLANEDA' o 'ROSARIO') y devuelve todas las droguerías ubicadas
 -- en dicho departamento, detallando el nombre del establecimiento, localidad y provincia.
 
