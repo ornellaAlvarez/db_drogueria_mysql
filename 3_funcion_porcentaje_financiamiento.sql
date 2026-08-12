@@ -1,8 +1,7 @@
---  PUNTO 2.3 - Función de Estadísticas de Financiamiento
---  Crear una función que reciba como parámetro el ID de una provincia y
--- devuelva el porcentaje (un valor numérico o porcentual) de droguerías
--- en esa provincia que poseen financiamiento de origen 'Privado'
--- sobre el total de establecimientos de la misma.
+-- Función de Estadísticas de Financiamiento
+-- Recibe por parámetro el ID de una provincia y devuelve el porcentaje
+-- de droguerías en esa provincia cuyo origen de financiamiento es 
+-- 'Privado' sobre el total de establecimientos de la misma.
 
 USE farmaprod;
 
