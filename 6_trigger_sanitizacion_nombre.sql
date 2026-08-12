@@ -1,9 +1,8 @@
--- PUNTO 2.6 - Trigger de Sanitización y Políticas de Nombre
--- Implementar un trigger (o combinación de trigger y función con ROLLBACK) que valide
--- las inserciones y actualizaciones en el nombre de la droguería. No se deben permitir
--- nombres de establecimientos que contengan únicamente números, que estén vacíos, o que
--- incluyan las palabras reservadas de testeo: 'PRUEBA', 'TEST', 'SINDATO', 'NINGUNO'.
--- En caso de detectarse, se debe revertir la transacción y retornar un mensaje descriptivo del rechazo.
+-- Trigger de Sanitización y Políticas de Nombre
+-- Valida el nombre de la droguería antes de insertarlo o actualizarlo. 
+-- No permite nombres de establecimientos que contengan únicamente números, que estén vacíos, o que
+-- uncluyan las palabras reservadas: 'PRUEBA', 'TEST', 'SINDATO', 'NINGUNO'.
+-- En caso de detectarse, se debe revertir la transacción y retornar un mensaje del rechazo.
 
 USE farmaprod;
  
