@@ -1,3 +1,7 @@
+-- Migración de datos desde la tabla plana DROGUERIA (sin normalizar) hacia
+-- el modelo relacional normalizado. Cada INSERT usa SELECT DISTINCT para
+-- extraer los valores únicos correspondientes a cada entidad del modelo.
+
 USE farmaprod;
 
 -- MIGRACION DE DATOS
