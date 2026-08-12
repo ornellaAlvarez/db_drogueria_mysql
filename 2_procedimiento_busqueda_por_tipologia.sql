@@ -1,9 +1,7 @@
--- PUNTO 2.2 - Buscador Avanzado por Tipología
--- Diseñar un procedimiento almacenado que permita buscar establecimientos filtrando
--- simultáneamente por la sigla de su tipología (ej: 'DI', 'DF') y un patrón de búsqueda
--- para el nombre del establecimiento que tenga un mínimo de 5 caracteres (ej:
--- buscar las tipologías 'DI' que comiencen con 'ALFA'). Si el parámetro de texto es menor
--- a 5 caracteres, el procedimiento debe lanzar un error informando la restricción. 
+-- Buscador Avanzado por Tipología
+-- Permite buscar establecimientos filtrando simultáneamente por la sigla de su
+-- tipología (ej: 'DI', 'DF') y un patrón de nombre del establecimiento de al menos
+-- 5 caracteres. Si el patrón es más corto, lanza un error informando la restricción.
  
 USE farmaprod;
 
