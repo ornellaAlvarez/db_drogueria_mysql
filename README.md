@@ -35,7 +35,7 @@ Los scripts se deben ejecutar en este orden:
   * SOURCE 09_trigger_sanitizacion_nombre.sql;
 
 # NOTAS
-  * DELIMETER $$: MySQL usa ; para instrucciones. Como los procedimientos, funciones y triggers contienen múltiples ; en su cuerpo, es necesario cambiar temporalmente el delimitador a $$ para que el cliente interprete todo el bloque como una sola instrucción, y luego volver a ;.
+  * DELIMETER '$$': MySQL usa ; para instrucciones. Como los procedimientos, funciones y triggers contienen múltiples ; en su cuerpo, es necesario cambiar temporalmente el delimitador a $$ para que el cliente interprete todo el bloque como una sola instrucción, y luego volver a ;.
   * SIGNAL SQLSTATE '45000': Es el mecanismo de MySQL para lanzar errores personalizados desde procedimientos, funciones y triggers, cancelando la transacción en curso.
   * NEW: dentro de un trigger BEFORE INSERT/BEFORE UPDATE, representa la fila que se está por insertar o actualizar, permitiendo validar sus valores antes de que se persistan.
 
