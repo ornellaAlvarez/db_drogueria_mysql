@@ -1,8 +1,7 @@
--- PUNTO 2.1 - Procedimiento de Reporte Geográfico por Coincidencia
--- Escribir un procedimiento almacenado que reciba como parámetro el nombre (o parte del nombre) de un
--- Departamento (por ejemplo: 'AVELLANEDA' o 'ROSARIO'). El procedimiento debe listar
--- todas las droguerías ubicadas en dicho departamento, detallando el nombre del
--- establecimiento, la localidad y la provincia a la que pertenecen.
+-- Procedimiento de Reporte Geográfico por Coincidencia
+-- Se recibe por parámetro el nombre (o parte del nombre) de un Departamento
+-- (por ejemplo: 'AVELLANEDA' o 'ROSARIO') y devuelve todas las droguerías ubicadas
+-- en dicho departamento, detallando el nombre del establecimiento, localidad y provincia.
 
 USE farmaprod;
 
