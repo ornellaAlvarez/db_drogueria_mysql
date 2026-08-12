@@ -10,13 +10,14 @@ Partir de una tabla plana (no normalizada) con información de establecimientos 
 
 El modelo tiene 6 entidades:
 
-# Tabla	                          # Descripción
-  provincia	                        Provincias de Argentina
-  departamento	                    Departamentos, cada uno perteneciente a una provincia
-  localidad	                        Localidades, cada una perteneciente a un departamento y provincia
-  tipologia	                        Tipo de establecimiento (ej: droguería, depósito)
-  origen_financiamiento	            Origen del financiamiento (Nacional, Provincial, Municipal, Privado)
-  establecimiento	                  Entidad principal: cada droguería/establecimiento, con sus relaciones a localidad, tipología y financiamiento
+| Tabla	                 | Descripción                                                                                                   |
+| :--------------------- | :------------------------------------------------------------------------------------------------------------ |
+| provincia	             | Provincias de Argentina                                                                                       |
+| departamento	         | Departamentos, cada uno perteneciente a una provincia                                                         |
+| localidad	             | Localidades, cada una perteneciente a un departamento y provincia                                             |
+| tipologia	             | Tipo de establecimiento (ej: droguería, depósito)                                                             |
+| origen_financiamiento  | Origen del financiamiento (Nacional, Provincial, Municipal, Privado)                                          |
+| establecimiento	       | Entidad principal: cada droguería/establecimiento, con sus relaciones a localidad, tipología y financiamiento |
 
 Todas las relaciones están implementadas con claves foráneas, y departamento y localidad usan claves compuestas (provincia_id + departamento_id) para mantener la integridad jerárquica provincia → departamento → localidad.
 
